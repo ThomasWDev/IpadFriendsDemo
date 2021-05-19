@@ -1,5 +1,5 @@
 //
-//  Helper.swift
+//  Constants.swift
 //  IpadFriendsDemo
 //
 //  Created by Thomas Woodfin on 5/19/21.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-struct Helper {
-
+struct Constants {
+    static let noInternet = "Internet is not available. Please check your network connectivity"
 }
