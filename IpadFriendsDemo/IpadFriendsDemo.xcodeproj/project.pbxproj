@@ -127,7 +127,7 @@
 		F8F86F3F265507DC007B58B5 /* IpadFriendsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F8F86F8226550AAB007B58B5 /* Controllers */,
+				F8F86F8226550AAB007B58B5 /* Features */,
 				F8F86F87265529F8007B58B5 /* API Manager */,
 				F8F86F7426550A97007B58B5 /* Utilities */,
 				F8F86F7126550A8B007B58B5 /* Extensions */,
@@ -187,17 +187,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		F8F86F8226550AAB007B58B5 /* Controllers */ = {
+		F8F86F8226550AAB007B58B5 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				F8F86F8326550AC5007B58B5 /* Main.storyboard */,
-				F8F86F8526550ADC007B58B5 /* FDDashboardVC.swift */,
-				F8F86F9226552ACB007B58B5 /* FDDashboardVM.swift */,
-				F8F86F9426552ADD007B58B5 /* FriendResponse.swift */,
-				F8F86F9C26552F71007B58B5 /* FDDashboardCell.swift */,
-				F8F86F9E265532E3007B58B5 /* FDDetailsVC.swift */,
+				F8F86FA526556999007B58B5 /* Controller */,
+				F8F86FA42655698B007B58B5 /* ViewModel */,
+				F8F86FA326556984007B58B5 /* Model */,
+				F8F86FA22655697C007B58B5 /* View */,
 			);
-			path = Controllers;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		F8F86F87265529F8007B58B5 /* API Manager */ = {
@@ -208,6 +206,40 @@
 				F8F86F8A265529F8007B58B5 /* URLPaths.swift */,
 			);
 			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		F8F86FA22655697C007B58B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8F86F8326550AC5007B58B5 /* Main.storyboard */,
+				F8F86F9C26552F71007B58B5 /* FDDashboardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8F86FA326556984007B58B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8F86F9426552ADD007B58B5 /* FriendResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8F86FA42655698B007B58B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8F86F9226552ACB007B58B5 /* FDDashboardVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8F86FA526556999007B58B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8F86F8526550ADC007B58B5 /* FDDashboardVC.swift */,
+				F8F86F9E265532E3007B58B5 /* FDDetailsVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
