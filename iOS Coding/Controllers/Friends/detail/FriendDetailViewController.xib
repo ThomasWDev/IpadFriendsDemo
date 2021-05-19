@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendDetailViewController" customModule="Friends_App" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="l5u-Fx-H9c" id="X57-hH-Asa"/>
+                <outlet property="avatarImageView" destination="8k2-M3-qAA" id="bLT-OF-FoK"/>
+                <outlet property="cellPhoneLabel" destination="yVX-hu-bQD" id="FfV-U8-NfK"/>
+                <outlet property="cityStateCountryLabel" destination="csC-Sr-cCj" id="SWS-LR-iio"/>
+                <outlet property="emailLabel" destination="Td8-5F-9rt" id="9P2-rY-Cb9"/>
+                <outlet property="fullnameLabel" destination="SNj-fR-cSK" id="eoE-aH-Nnc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8k2-M3-qAA">
+                    <rect key="frame" x="132" y="78" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="a5H-cx-jNV"/>
+                        <constraint firstAttribute="width" constant="150" id="ioV-vI-ngu"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNj-fR-cSK">
+                    <rect key="frame" x="30" y="245" width="374" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5u-Fx-H9c">
+                    <rect key="frame" x="30" y="279" width="374" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City, State and Country" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csC-Sr-cCj">
+                    <rect key="frame" x="30" y="313" width="374" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-5F-9rt">
+                    <rect key="frame" x="30" y="347" width="374" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell phone" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVX-hu-bQD">
+                    <rect key="frame" x="30" y="381" width="374" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8k2-M3-qAA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="34" id="4nV-Pz-0IR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Td8-5F-9rt" secondAttribute="trailing" constant="10" id="7jK-b7-woy"/>
+                <constraint firstItem="SNj-fR-cSK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="DJl-KR-cZl"/>
+                <constraint firstItem="yVX-hu-bQD" firstAttribute="top" secondItem="Td8-5F-9rt" secondAttribute="bottom" constant="10" id="DKz-sm-qQG"/>
+                <constraint firstItem="csC-Sr-cCj" firstAttribute="top" secondItem="l5u-Fx-H9c" secondAttribute="bottom" constant="10" id="GH4-td-f0A"/>
+                <constraint firstItem="SNj-fR-cSK" firstAttribute="top" secondItem="8k2-M3-qAA" secondAttribute="bottom" constant="17" id="Jo7-io-17i"/>
+                <constraint firstItem="Td8-5F-9rt" firstAttribute="top" secondItem="csC-Sr-cCj" secondAttribute="bottom" constant="10" id="O78-hv-LOG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="csC-Sr-cCj" secondAttribute="trailing" constant="10" id="QMt-PD-vIx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l5u-Fx-H9c" secondAttribute="trailing" constant="10" id="Uli-oK-WP1"/>
+                <constraint firstItem="csC-Sr-cCj" firstAttribute="leading" secondItem="l5u-Fx-H9c" secondAttribute="leading" id="WC0-S4-53B"/>
+                <constraint firstItem="l5u-Fx-H9c" firstAttribute="top" secondItem="SNj-fR-cSK" secondAttribute="bottom" constant="10" id="WXy-xW-Iv8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SNj-fR-cSK" secondAttribute="trailing" constant="10" id="dho-dI-fWr"/>
+                <constraint firstItem="Td8-5F-9rt" firstAttribute="leading" secondItem="csC-Sr-cCj" secondAttribute="leading" id="frn-1T-XRc"/>
+                <constraint firstItem="8k2-M3-qAA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r5k-xR-qtj"/>
+                <constraint firstItem="l5u-Fx-H9c" firstAttribute="leading" secondItem="SNj-fR-cSK" secondAttribute="leading" id="sNZ-Tx-a2E"/>
+                <constraint firstItem="yVX-hu-bQD" firstAttribute="leading" secondItem="Td8-5F-9rt" secondAttribute="leading" id="y4o-ch-aIx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yVX-hu-bQD" secondAttribute="trailing" constant="10" id="yhc-ef-C8o"/>
+            </constraints>
+            <point key="canvasLocation" x="50.724637681159422" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
